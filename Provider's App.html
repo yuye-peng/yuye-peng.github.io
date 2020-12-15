@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Provider's App</title>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;1,400;1,500;1,562;1,600&display=swap" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+  <section id="Hero">
+
+    <!-- Nav Bar -->
+    <div class="navigation">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+          <img src="icon.png" width="40" height="40" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link buttontext" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link buttontext" href="index.html#Myworks">Works<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link buttontext" href="index.html#About">About</a>
+            </li>
+          </ul>
+
+      </nav>
+    </div>
+
+
+    <!-- Hero -->
+
+    <div class="Hero-text">
+      <h2>Provider's Webapp</h2>
+      <h3>Medly Pharmacy</h3>
+    </div>
+</section>
+
+  <img class="worksimages" src="images/DrApp-Hero.jpg" alt="Avatar">
+
+
+  <!-- Problem -->
+  <section id="problems">
+
+    <div class="container-fluid">
+      <div class="row d-flex align-items-Top">
+
+        <div class="col-lg-2">
+          <h4>👋</h4>
+          <h5>My Role</h5>
+          <p class="body2">Product Designer</p>
+          <br>
+          <h5>Dates</h5>
+          <p class="body2">02.2020 - 08.2020</p>
+          <br>
+          <h5>Status</h5>
+          <p class="body2">In Developement</p>
+          <br>
+          <h5>Contribution</h5>
+          <p class="body2 narrative">Field Study, Stakeholder Interview, Survey, Usability Testing, User Interview, Personas, Competitive Audit, Wireframing, Prototyping, UI Design System</p>
+          <br>
+          <a href="https://da.medly.io/">Access to the app <span>&#10230;</span></a>
+        </div>
+
+        <div class="col-lg-8">
+          <h4>Problems</h4>
+          <p> Medly is a full-service pharmacy partnering with providers to make prescriptions easier for their patients and practice. </p>
+          <br>
+          <p>Provider's app is is an online platform where providers can track the status of a prescription, patient, or prior authorization. Rather than relying on phone and fax and responding to endless voicemails, providers can message a
+            pharmacist for an expedient response in between patient visits.</p>
+          <br>
+
+          <p>Users' Pain Points</p>
+          <ul>
+            <li>• Providers have no way to track or modify the prescriptions after they sent out.</li>
+            <li>• Nobody prefers calling pharmacy to request the patients' info.</li>
+            <li>• Less providers want to process the prior authorization within their office.</li>
+            <li>• Too many tools to use to communicate with pharmacy, conversation context could get lost.</li>
+          </ul>
+
+          <div class="spacer">
+
+          </div>
+          <img class="smallerworks-image" src="images/Dr's app/DrApp-CurrentFlow.svg" alt="Avatar">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Audiences -->
+  <section id="Audiences">
+
+    <h4>Audiences</h4>
+    <p>The provider's app is deisigned for the healthcare facilities and their users.</p>
+    <p>There can be three levels of hierarchy:</p>
+    <ul class="list-group">
+      <li>LEVEL 1: Group (Grouping of facilities)</li>
+      <li>LEVEL 2: Facility (Clinics or a Hospitals)</li>
+      <li>LEVEL 3: Users Associated with Facility (Doctors, Physician Assitants, Nurces, Doctor Office Admins)</li>
+    </ul>
+    <br>
+    <p>Clinics may be a part of a group with different addresses or maybe independently operated entities. A doctor may work at the multiple clinics under one healthcare group. The office admin role need to be able to overview all patients' info
+      within a clinic.</p>
+    <br>
+    <p>The WebApp is also designed for the Medly account manager role, who daily coordinates with the multiple providers' requests. The account manager admin is the supervisor of the team and assigned the facilities and missions to the deparment
+      members.</p>
+    <br>
+    <img class="worksimages" src="images/Dr's app/Persona.png" alt="">
+    <br>
+    <p class="content-center">External User - Providers</p>
+    <br>
+    <img class="worksimages" src="images/Dr's app/Persona am.png" alt="">
+    <br>
+    <p class="content-center">Internal User - Account Manager</p>
+
+  </section>
+
+  <!-- Goals -->
+  <section id="Goals">
+
+    <h4>Goals</h4>
+    <img class="worksimages" src="images/Dr's app/Goals.jpg" alt="">
+    <div class="spacer">
+    </div>
+    <img class="smallerworks-image" src="images/Dr's app/DrApp-Mission.svg" alt="">
+    <br>
+    <p class="content-center">Our Missions</p>
+  </section>
+
+
+  <!-- My Role -->
+  <section id="MyRole">
+    <h4>My Role</h4>
+    <p>I am the sole product designer of project to design the app from the scratch. There was no product manager at the beginning, so I worked with VP of product and CEO directly to explore the business strategy and define the MVP scope.
+      The app is under development by an external contract team. I collaborated closely alongside 6 software engineers, 1 quality analyst and QA the development outcome before the release.
+      </div>
+
+  </section>
+
+  <!-- Discovery -->
+  <section id="Discovery">
+
+    <h4>Discovery</h4>
+    <div class="row d-flex align-items-Top">
+      <div class="col-md-6">
+        <img class="icon" src="images/Dr's app/stakeholder interview icon.png" alt="">
+        <h5 class="bold">Stakeholder Interview</h5>
+        <br>
+        <p class="narrative">This is a B2B product which makes it challenge to find out what providers really need. I had one on one interview with 8 stakeholders and 3 sales reps, explored the user behavior based on their healthcare professional
+          knowledge. The interviews are also help me to clearly define the business goals from multiple perspectives.</p>
+
+      </div>
+
+      <div class="col-md-6">
+        <img class="icon" src="images/Dr's app/competitive.png" alt="">
+        <h5 class="bold">Competitors Analysis</h5>
+        <br>
+        <p class="narrative">It is challenging to really test the B2B product without a provider's account. I digged into the competitor's website and blogs, compared AltoMD and Diplomat Provider's App to identify the common patterns and better
+          understand what features they have, how those features successfully worked.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img class="icon" src="images/Dr's app/user interview.png" alt="">
+        <h5 class="bold">User Interview</h5>
+        <br>
+        <p class="narrative">I visited multiple doctor's offices with sales reps, interviewed MD and doctor office manager to understand their pain points. Providers normally hesitate to discuss about the new tools, it is hard for them to imagine the
+          features based on our despriction. So I interviewed sales team and account managers instead because they have a better knowledge about how providers work.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img class="icon" src="images/Dr's app/usability testing.png" alt="">
+        <h5 class="bold">Usability Testing</h5>
+        <br>
+        <p class="narrative">I invited 5 external users, including 2 doctors, 2 physician assistants, 1 office manager, and 2 Medly account managers to participate in the usability testing for the wireframes via video calls. Based on their
+          feedback, I updated the design with hi-fi prototypes, and run another round of usability testing.</p>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+  <!-- Design Process -->
+  <section id="Design-process">
+
+    <div class="text-container">
+      <h4>Design Process</h4>
+      <h5>User Flow Mapping</h5>
+      <p>Before I created the flow chart, I tried to figure out what are the jobs to be done by using this app. Providers could use the app for multiple purposes, for example, complete the tasks required by pharmacy, or chat with account manager, or
+        e-prescribing directly...etc. So I listed the users objectives first, then created paths that users will go through to achieve the goals.
+      </p>
+      <div class="spacer">
+
+      </div>
+      <img class="worksimages" src="images/Dr's app/user flow mapping.png" alt="">
+    </div>
+
+
+    <div class="spacer">
+    </div>
+
+    <div class="text-container">
+      <h5>Wireframing</h5>
+      <p>Following the user flow mapping, I created the wireframes for the desktop screens, started considering about the information hierarchy, which to stay where, and how to let users click through the CTAs to complete the tasks. I did usability
+        testing with 5 providers to gather their feedbacks of the wireframes. There are a lot of useful comments about the information hierarchy, which helps to simplify the screen later in the prototype.
+      </p>
+      <br>
+    </div>
+
+    <img class="worksimages" src="images/Dr's app/WireFrame.jpg" alt="">
+
+  </section>
+
+
+  <!-- Design System -->
+  <section id="Design-system">
+
+      <h4>Design System</h4>
+      <p>Medly B2B product is trying to create a professional and calm feeling to the audiences. So we are using light fresh colors for icons, background and components, and highlight CTA with the same strong accent color in our new brand design
+        guideline. We introduced Open-Sans font type for providers instead of using the Gotham-Rounded font on our marketing website. The illustration and icons are designed in a similar rounded style to bring more friendliness.</p>
+
+      <br>
+
+      <div class="spacer">
+
+      </div>
+
+      <img class="worksimages" src="images/Dr's app/color & typo.svg" alt="">
+
+      <div class="spacer">
+
+      </div>
+
+      <img class="worksimages" src="images/Dr's app/Component.jpg" alt="">
+
+
+  </section>
+
+
+  <!-- Solution -->
+  <section id="Solution">
+    <div class="text-container">
+      <h4>Solution</h4>
+      <p>I re-organized the content hierarchy based on the usability testing feedback and was to create interface that users find easy to track the prescription status and take actions which requested by the pharmacy. We are trying to be
+        consistent with our website color pallette and illustrations, design a clear, simple and easy-to-use interface for both providers and account managers.</p>
+        <br>
+      <h5>Dashboard</h5>
+      <ul>
+        <li>• Let providers be able to switch between different working space, take care of different group of patients.</li>
+        <li>• Allow providers easily find out the Medly contacts and any notifications they missed from Medly.</li>
+        <li>• Providers could click the CTA to e-prescribe the prescriptions directly in the app.</li>
+        <li>• Clearly categorize the patients by the prescription status.</li>
+                <li>• Let users easily find out what missions they should complete to improve the patients' satisfaction.</li>
+      </ul>
+
+      <br>
+
+      <img class="worksimages shadow mb-5 bg-white rounded" src="images/Dr's app/prototype 1.gif" alt="">
+
+      <div class="spacer">
+      </div>
+
+      <h5>Patients List</h5>
+      <ul>
+        <li>• Allow providers to search for a specific patient by the name and date birth.</li>
+        <li>• Allow providers filter the list by multiple ways.</li>
+        <li>• Providers could choose to see their own patients or all patients from the same clinic.</li>
+      </ul>
+<br>
+      <img class="worksimages shadow mb-5 bg-white rounded" src="images/Dr's app/prototype 2.gif" alt="">
+
+
+      <div class="spacer">
+
+      </div>
+
+      <h5>Patient's Profile</h5>
+      <ul>
+        <li>• Providers are able to find out patient contacts and insurance information, as well as prescription details including medication cost and prior auth status.</li>
+        <li>• Providers could chat with Medly account manager directly within the app.</li>
+        <li>• Allows users to upload and share the documents at the one place.</li>
+                <li>• Doctors could e-prescribing directly or modify the prescription for this specific patient.</li>
+      </ul>
+
+<br>
+      <img class="worksimages shadow mb-5 bg-white rounded" src="images/Dr's app/prototype 3.gif" alt="">
+
+      <div class="spacer">
+      </div>
+
+      <h5>Responsive Design</h5>
+<p>About 33 percent of EHR users and 25 percent of non-EHR users use a tablet device in their medical practice. More than 30% of Medly partners are dermatology clinics, where the tablet has been adopted by doctors and nurses across the offices. So I created responsive design for the tablet screens</p>
+<br>
+
+
+
+    </div>
+
+  </section>
+
+  <img class="worksimages" src="images/Dr's app/Responsive Design.jpg" alt="">
+
+<div class="spacer">
+
+</div>
+  <!-- Footer -->
+
+  <div class="content-center">
+    <a href="Website.html">
+      <h4 class="text-dark"> <span class="Title">Next Project: Medly Website</span></h3>
+    </a>
+  </div>
+
+<div class="spacer">
+
+</div>
+
+
+<section id="Footer">
+  <div class="bottom-container">
+
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+          <a class="footer-link" href="https://dribbble.com/playbook/">Dribble</a>
+          <a class="footer-link" href="https://www.behance.net/emilyp618a63a">Behance</a>
+    <p class="footer-link">Made with ♥ by Yuye Peng 2020.</p>
+  </div>
+
+
+</section>
+
+
+
+</body>
+
+</html>
