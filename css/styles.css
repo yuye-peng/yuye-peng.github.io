@@ -76,51 +76,66 @@ line-height: 26px;}
   margin-bottom: 16px;
 }
 
-.top-container-fluid{
-    padding:1% 12% 7% 12%;
-}
-
 .container-fluid{
-  padding:7% 12%;
+padding:7% 25%;
 }
 
-.container-fluid-top{
-    padding:7% 12% 0 12%;
+.image-container{
+padding-left: 10%;
+padding-right: 10%;
 }
 
-.container-fluid-next{
-  padding: 0 12% 7% 12%;
+.text-container{
+  padding: 0 25%;
 }
+
+.container-fluid-hero{
+padding: 7% 25% 3% 25%;
+}
+
+@media (max-width: 992px) {
+  .container-fluid{
+  padding:7% 5%;
+  }
+
+  .container-fluid-hero{
+  padding: 7% 5% 3% 5%;
+  }
+
+  .text-container{
+    padding: 0 5%;
+  }
+
+}
+
+.intro {
+padding-left: 10%;
+padding-top: 7%;
+width: 25%;
+position: absolute;
+}
+
+@media (max-width: 992px) {
+  .intro {
+  padding-left: 10%;
+  padding-top: 7%;
+  width: 25%;
+display: none;
+  }
+  }
 
 .spacer{
   height: 80px;
 }
 
 
-.sticky-top{
-  padding-top: 160px;
-}
-
-#Hero{
-padding: 7% 25% 3% 25%;
-}
-
 #Audiences, #MyRole, #About{
-  padding: 7% 25%;
+
   background: #EDF0F5;
 }
 
-#Goals, #Design-system, #works{
-  padding: 7% 25%;
-}
 
-#Discovery, #Visual-system{
-    padding: 7% 25% 5% 25%;
-}
 
-.text-container{
-  padding: 0 25%;
-}
 
 #Design-process{
   background: #EDF0F5;
@@ -148,8 +163,9 @@ right:31%;
 }
 
 .research-image{
-  width:90%;
-padding-top: 160px;
+padding-left: 10%;
+padding-right: 10%;
+width: 100%;
 }
 
 .diagram{
@@ -235,11 +251,25 @@ padding-right: 15%;
   padding-bottom: 40px;
 }
 
-.smallerworks-image{
+.selfie{
+  display: block;
+  width:80%;
+  max-width: 400px;
+}
+
+@media (max-width: 992px){
+    .selfie{
+      display: none;
+      width:80%;
+      max-width: 400px;
+    }
+}
+
+.Hero-image{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:80%;
+    width:80%;
 }
 
 .thumbnail {
@@ -372,23 +402,8 @@ margin-bottom: 24px;
     font-style: normal;
   font-weight: 300;
   font-size: 32px;
-  line-height: 40px;
-  margin-bottom: 32px;
+  line-height: 50px;
+  padding: 0 20%;
   }
 
-}
-
-@media (max-width:768px) {
-  .container-fluid{
-    padding:10% 32px;
-  }
-  .top-container-fluid{
-    padding:7% 32px;
-  }
-  .navbar{
-    padding:2% 32px 1% 32px;
-  }
-  .Top-container-images{
-    position:static;
-  }
 }
