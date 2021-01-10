@@ -94,7 +94,7 @@ padding: 7% 25% 3% 25%;
 }
 
 @media (max-width: 992px) {
-  .container-fluid{
+  .container-fluid, .container-fluid-hero{
   padding:7% 5%;
   }
 
