@@ -98,9 +98,6 @@ padding: 7% 25% 3% 25%;
   padding:7% 5%;
   }
 
-  .container-fluid-hero{
-  padding: 7% 5% 3% 5%;
-  }
 
   .text-container{
     padding: 0 5%;
@@ -129,7 +126,7 @@ display: none;
 }
 
 
-#Audiences, #MyRole, #About,#Impact{
+#Audiences, #MyRole, #About, #Impact{
 
   background: #EDF0F5;
 }
