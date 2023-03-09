@@ -12,11 +12,35 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;1,400;1,500;1,562;1,600&display=swap" rel="stylesheet">
-
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script language="javascript">
+function pasuser(form) {
+if (form.pass.value=="Lucky2023") { location="index.html" }
+else { alert("Wrong Password") }
+}
+</script>
+
+<script language="javascript">
+  function pasuser(form) {
+    if (form.pass.value == "Goodluck2023") {
+      location = "home.html"; // redirect to home page if password is correct
+    } else {
+      alert("Wrong Password");
+    }
+  }
+
+  function checkAccess() {
+    const password = localStorage.getItem("password");
+    if (!password || password !== "Goodluck2023") {
+      location = "password.html"; // redirect to password protected screen if password is not saved or incorrect
+    }
+  }
+</script>
+
 </head>
 
 <body>
@@ -58,9 +82,11 @@
 
 
     <!-- Hero -->
+<section id="hero">
     <div class="Hero-text">
       <div class="container-fluid-hero">
-        <h2>Hi, I'm Yuye Peng, a creative product designer in New York City. </h2>
+        <h3>Hi, I'm Yuye </h3>
+          <h1>a lead product designer solving users' problems.</h1>
         <br>
         <div class="content-center moving-mouse-holder d-none d-lg-block">
 
@@ -69,101 +95,110 @@
           </div>
 
         </div>
-
-
-        <img class="Hero-image" src="images/heroimage-01.svg" alt="">
       </div>
-      <br>
-
-
-
-  </section>
+      <img class="Hero-image" src="images/heroimage-01.svg" alt="">
+</section>
 
   <!-- My works -->
+
   <section id="works">
-    <div class="container-fluid">
 
-      <h4 class="content-center">My Works</h4>
 
-      <a href="B2C.html">
-        <div class="thumbnail">
-          <img src="images/Mobile App Cover.jpg" alt="Avatar" class="worksimages">
-          <div class="overlay">
-            <div class="text">IOS App</div>
-          </div>
+    <a href="Invest home redesign.html">
+    <div class="thumbnail">
+        <img class="worksimages" src="images/Stash invest cover test.jpg" alt="Avatar">
+      <div class="overlay">
+        <div class="text">
+        <h2>Personalized Investing Experience</h2>
+        <h4>Stash • Fintech App</h4>
         </div>
-      </a>
-
-      <div class="spacer">
       </div>
-
-      <a href="Provider's App.html">
-        <div class="thumbnail">
-          <img src="images/DrAppCover.jpg" alt="Avatar" class="worksimages">
-          <div class="overlay">
-            <div class="text">Provider WebApp</div>
-          </div>
-        </div>
-      </a>
-
-      <div class="spacer">
-      </div>
-
-      <a href="Website.html">
-        <div class="thumbnail">
-          <img src="images/Website Redesign.jpg" alt="Avatar" class="worksimages">
-          <div class="overlay">
-            <div class="text">Medly Website</div>
-          </div>
-        </div>
-      </a>
-
-      <div class="spacer">
-      </div>
-
-      <a href="Insurance App.html">
-        <div class="thumbnail">
-          <img src="images/Insurance App Cover.jpg" alt="Avatar" class="worksimages">
-          <div class="overlay">
-            <div class="text">Insurance App</div>
-          </div>
-        </div>
-      </a>
-
     </div>
+    </a>
+
+    <a href="B2C.html">
+    <div class="thumbnail">
+        <img class="worksimages" src="images/Mobile App Cover.jpg" alt="Avatar">
+      <div class="overlay">
+        <div class="text">
+          <h2>Delightful Prescription Delivery</h2>
+          <h4>Medly Pharmacy • Health</h4>
+        </div>
+      </div>
+    </div>
+      </a>
+
+    <a href="Provider's App.html">
+    <div class="thumbnail">
+      <img class="worksimages" src="images/DrAppCover.jpg" alt="Avatar">
+     <div class="overlay">
+      <div class="text">
+        <h2>Simple Provider Portal</h2>
+        <h4>Medly Pharmacy • Health</h4>
+      </div>
+     </div>
+    </div>
+    </a>
+
+  <a href="PopshopLive.html">
+  <div class="thumbnail">
+    <img class="worksimages" src="images/Popshop Cover.jpg" alt="Avatar">
+   <div class="overlay">
+    <div class="text">
+      <h2>Shop, Sell, LiveStream</h2>
+      <h4>Popshop Live • Shopping</h4>
+    </div>
+   </div>
+  </div>
+  </a>
+
+
   </section>
 
 
 
   <!-- Resume -->
 
+
   <section id="About">
         <div class="container-fluid">
     <div class="row">
 
-      <div class="col-lg-8 col-sm-12">
+      <div class="col-lg-7 col-sm-12">
         <div class="content-paragraph">
-          <h4>Hello, I'm Yuye Peng, a senior product designer working at IRhythm Technologies. </h4>
-          <p>I landed as a creative designer after graduation from WashU in 2015. I have experiences on designing delightful and easy user experience for diversity groups of audiences, from the physical products to mobile and web apps. </p>
+          <h2>Thanks for stoppin'by, nice to 'meet' ya 👋 </h2>
+          <br>
         </div>
       </div>
 
-      <div class="col-lg-4 col-sm-12">
+      <div class="col-lg-5 col-sm-12">
         <img src="images/selfie.png" alt="Avatar" class="selfie">
       </div>
 
     </div>
+
+    <div class="spacer"></div>
+
+    <h5>I enjoy simplifying and optimizing the user experience by developing strategies that have a long-term impact on the product.</h5>
     <br>
-    <h5>Approach</h5>
-    <p>User Research, Usability Testing, Information Architecture, Wireframing, Rapid Prototyping, System Design, 3D Modeling & Rendering, Front End Development.</p>
+    <h5>I am passionate about cutting through ambiguity through effective cross-functional collaboration, asking the right questions, and solving complicated user problems.</h5>
+
+    <div class="spacer"></div>
+
+    <h3>Skills</h3>
+        <img class="tag" src="images/Skill tag 1.png" alt="">
+        <img class="tag" src="images/Skill tag 2.png" alt="">
     <br>
-    <h5>Skills</h5>
-    <p>Figma, AdobeXD, Sketch, Principle, Photoshop, Illustrator, Indesign, HTML5.0, Bootstrap, CSS, Javascript, AutoCAD, Revit, Rhino, Vray.</p>
     <br>
-    <h5>Get In Touch</h5>
-    <p>emilyp618@gmail.com</p>
-    <p>312-394-0522</p>
-    <a href="https://drive.google.com/file/d/1g0XVqQUNoQSLvM9tuinE9km6DneyKHo3/view?usp=sharing">
+    <br>
+
+    <h3>Get In Touch</h3>
+    <h5>emilyp618@gmail.com</h5>
+    <h5>312-394-0522</h5>
+    <a href="https://drive.google.com/file/d/19VdHygX6MCfYTN6YHSOHuOZ3QbIZXfe_/view">
+
+    <br>
+
       <button type="button" class="btn btn-outline-dark">
         DOWNLOAD RESUME
       </button>
@@ -179,7 +214,7 @@
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <a class="footer-link" href="https://dribbble.com/YuyePeng">Dribbble</a>
       <a class="footer-link" href="https://www.behance.net/emilyp618a63a">Behance</a>
-      <p class="footer-link">Made with ♥ by Yuye Peng 2020.</p>
+      <p class="footer-link">Coded with ♥ by Yuye Peng</p>
     </div>
 
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enter Password</title>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;1,400;1,500;1,562;1,600&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script language="javascript">
+    function pasuser(form) {
+      if (form.pass.value == "Goodluck2023") {
+        localStorage.setItem("password", "Goodluck2023"); // save the password in local storage
+        location = "home.html"; // redirect to home page
+      } else {
+        alert("Wrong Password");
+      }
+    }
+  </script>
+
+</head>
+
+
+<body id="Passwordpage">
+
+  <script language="javascript">
+  function pasuser(form) {
+    if (form.pass.value=="Goodluck2023") {
+      location="index.html"
+    } else {
+      alert("Wrong Password")
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const passwordInput = document.querySelector("input[name='pass']");
+    passwordInput.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        pasuser(event.target.form);
+      }
+    });
+  });
+  </script>
+
+  <div class="Password-Container">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_cSNnXm5euH.json" background="transparent" speed="1" style="width: 300px; height: 150px;" loop autoplay></lottie-player>
+    <h3>Password is required.</h3>
+    <form class="passform">
+      Find it on my resume <input type="password" name="pass" value="Submit" size="16">
+      <br>
+      <br>
+      <p>Don't know the password? <a href="mailto:emilyp618@gmail.com">Contact me</a></p>
+      <br>
+      <input value="Submit" onclick="pasuser(this.form)" type="button" class="btn btn-outline-light">
+    </form>
+  </div>
+
+
+</body>
+
+</html>
